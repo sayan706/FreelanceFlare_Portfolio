@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - FreelanceFlare</title>
+  <title>Portfolio Details - FreelanceFlare</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -59,77 +59,101 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
+
     </div>
   </header>
+
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Our Services</h1>
-        <p>At FreelanceFlare, we deliver cutting-edge digital solutions to help businesses thrive in the online world.</p>
+        <h1>Portfolio Details</h1>
+        <p>Showcasing innovative projects with cutting-edge technology and seamless functionality.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Our Services</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
-  
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-  
-      <div class="container">
-  
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
         <div class="row gy-4">
-  
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Development</a>
-              <a href="#" class="active">Application Development</a>
-              <a href="#" class="active">Web & Application Redesign</a>
-              <a href="#" class="active">E-Commerce Solutions</a>
-              <a href="#" class="active">Custom Software Development</a>
-              <a href="#" class="active">SEO & Digital Marketing</a>
+    
+          <!-- Image Slider -->
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+    
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+    
+              <div class="swiper-wrapper align-items-center">
+    
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/go food.jpeg" alt="Go Food - Order Page">
+                </div>
+    
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/go-food-2.jpg.png" alt="Go Food - Menu Page">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/go-food-3.jpg.png" alt="Go Food - Order Page">
+                </div>
+    
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-  
-            <h4>Why Choose FreelanceFlare?</h4>
-            <p>We offer high-quality, scalable, and cost-effective solutions tailored to your business needs. Let us handle your digital transformation while you focus on growth.</p>
           </div>
-  
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="Our Services" class="img-fluid services-img">
-            <h3>Comprehensive Digital Solutions to Elevate Your Business</h3>
-            <p>
-              At FreelanceFlare, we specialize in creating seamless, innovative, and user-friendly digital products that drive results.
-            </p>
-            
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Custom Web Development - Fast, responsive, and scalable websites.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Application Development - Mobile & Web apps designed for performance.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Web & App Redesign - Modernizing your existing platforms for better UX.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>E-Commerce Solutions - Secure, scalable online stores for seamless sales.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Custom Software Development - Tailored solutions for unique business needs.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>SEO & Digital Marketing - Boosting online visibility and conversions.</span></li>
-            </ul>
-            
-            <p>
-              Whether you're a startup or an established business, we bring expertise, creativity, and technical excellence to every project.
-            </p>
-            <p>
-              Let's build something amazing together! Reach out to us and take the next step in your digital journey.
-            </p>
+    
+          <!-- Project Info -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Food Ordering App</li>
+                <li><strong>Technology</strong>: MERN Stack (MongoDB, Express, React, Node.js)</li>
+                <li><strong>Authentication</strong>: Passport.js</li>
+                <li><strong>Project Date</strong>: 2024</li>
+                <li><strong>Status</strong>: Demo Project (Not Hosted)</li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Go Food - Food Ordering App</h2>
+              <p>
+                Go Food is a **food ordering website** built using the **MERN Stack**. It allows users to browse different food items, place orders, and manage their carts. Authentication is handled using **Passport.js** to provide a secure login experience. The project is currently a demo and not hosted online.
+              </p>
+            </div>
           </div>
-  
+    
         </div>
-  
+    
       </div>
-  
-    </section><!-- /Service Details Section -->
-  
+    
+    </section>
+    
+    <!-- /Portfolio Details Section -->
+
   </main>
-  
 
   <footer id="footer" class="footer dark-background">
 
