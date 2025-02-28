@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://freelanceflare.netlify.app/sitemap.xml
